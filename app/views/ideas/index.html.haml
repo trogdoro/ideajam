@@ -1,0 +1,10 @@
+%form
+  - @keys.each do |key|
+    == <label><input type="checkbox" name="#{key}" value="on" #{"checked" if params[key]}> #{key.gsub('_', ' ').gsub!(/\w+/) { $&.capitalize }}</label><br>
+
+  <p>
+  == <input type="submit" value="Submit">
+
+<p>
+Here's the idea you should use:<p>
+== #{@human_choice}: <a href='#{@link[0]}'>#{@link[1]}</a><br>
