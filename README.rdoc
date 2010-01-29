@@ -1,0 +1,22 @@
+= Summary
+Simple app that randomly suggests a simple ruby project for you to do.  The point was to use at CRB Code Jams.
+
+= How to use
+Just check some checkboxes (categories) and click the button.  If you don't like the suggestion, keep clicking the button until you find one you like.
+
+= Current state
+The possible projects are currently hard-coded.  There are 12 ruby quizes (to do) and 15 gems (to explore).
+
+= How to run
+$ sudo gem install merb
+$ merb -p 4000
+
+= Todo
+- Move sources into model
+- Get gems and ruby quizes dynamically?
+  - By making socket calls to gemcutter.org and rubyquiz.com?
+- Add more sources?
+  - Open source ruby projects to...
+    - Try?
+    - Extend?
+    - Port to rails 3?
